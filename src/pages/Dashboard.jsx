@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
-import TaskList from "../components/TaskList";
-import TaskForm from "../components/TaskForm";
+import Tasklist from "../components/Tasklist";
+import Taskform from "../components/Taskform";
 
 function Dashboard() {
   return (
@@ -18,8 +18,8 @@ function Dashboard() {
       
       <main className="flex-1 p-6">
         <Routes>
-          <Route path="tasks" element={<TaskList />} />
-          <Route path="add-task" element={<TaskForm />} />
+          <Route path="tasks" element={<Tasklist />} />
+          <Route path="add-task" element={<Taskform />} />
         </Routes>
       </main>
     </div>
